@@ -1,0 +1,24 @@
+{
+    "name": "aurimasniekis/packagist-adder",
+    "type": "tool",
+    "description": "Submit's package from current git project to Packagist.org",
+    "keywords": ["packagist", "cli", "submit", "package"],
+    "homepage": "https://github.com/aurimasniekis/packagist-adder",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aurimas Niekis",
+            "email": "aurimas@niekis.lt"
+        }
+    ],
+    "bin": ["bin/packagist-adder"],
+    "require": {
+        "symfony/console": "^3.2",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "PackagistAdder\\": "src"
+        }
+    }
+}
